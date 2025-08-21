@@ -4,7 +4,7 @@
 set -Eeuo pipefail
 trap 'echo -e "\e[31m[ERR]\e[0m 出错，行 $LINENO" >&2' ERR
 
-REPOS_CSV="${1:-}"; PORT="${2:-9418}"
+REPOS_CSV="${1:-}"; PORT="${2:-9413}"
 REPO_ROOT="/opt/git"
 UNIT="/etc/systemd/system/git-daemon.service"
 
