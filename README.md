@@ -36,5 +36,5 @@ git log --oneline --decorate --graph --all | head
 touch /opt/git/oneclick-deploy.git/git-daemon-export-ok
 
 之后，其他电脑克隆用只读地址即可：
-git clone git://<服务器IP>:9413/oneclick-deploy.git
+git clone git://<服务器IP>:9418/oneclick-deploy.git
 
