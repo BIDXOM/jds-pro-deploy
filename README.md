@@ -38,4 +38,3 @@ git push origin master
 
 之后，其他电脑克隆用只读地址即可：
 #git clone git://<服务器IP>:9413/Test.git
-
