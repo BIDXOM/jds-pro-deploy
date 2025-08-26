@@ -1,5 +1,7 @@
 # jds-pro-deploy
 
+ bash <(curl -sL https://raw.githubusercontent.com/BIDXOM/jds-pro-deploy/refs/heads/main/setup-git-readonly.sh) Test 9431
+ 
 溫馨提示：如何一次性把首版代码推入裸仓（走本机文件路径）
 
 1、在同一服务器中，同步裸仓代码：
