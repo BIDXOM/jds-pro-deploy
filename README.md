@@ -8,14 +8,14 @@
 服务URL 例： git://<服务器IP>:9413/<repo>.git
 克隆示例： git clone git://<服务器IP>:9413/Test.git
 
-echo "# jds-pro-deploy" >> README.md
-git add README.md
-git commit -m "first commit"
+#echo "# jds-pro-deploy" >> README.md
+#git add README.md
+#git commit -m "first commit"
 
 中Test中新增代码，提交后，暂不推送，执行下面步骤
 
 2.	看一下你当前的远程地址：
- git remote -v
+#git remote -v
 
 3、把 origin 改为本机裸仓路径（可写）：
 git remote set-url origin /opt/git/Test.git
@@ -30,12 +30,12 @@ git push origin master
 
 
 5.	验证裸仓里已有提交：
-cd /opt/git/oneclick-deploy.git
-git log --oneline --decorate --graph --all | head
+#cd /opt/git/oneclick-deploy.git
+#git log --oneline --decorate --graph --all | head
 
-6)（可选）确保只读导出开启（给 git-daemon 用）：
-touch /opt/git/Test.git/git-daemon-export-ok
+6.（可选）确保只读导出开启（给 git-daemon 用）：
+#touch /opt/git/Test.git/git-daemon-export-ok
 
 之后，其他电脑克隆用只读地址即可：
-git clone git://<服务器IP>:9413/Test.git
+#git clone git://<服务器IP>:9413/Test.git
 
